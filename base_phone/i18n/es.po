@@ -1,22 +1,24 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * base_phone
-# 
+#
 # Translators:
+# Antonio Trueba, 2016
 # Antonio Trueba, 2016
 # Enrique Zanardi <ezanardi@atlantux.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: connector-telephony (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-01 04:07+0000\n"
-"PO-Revision-Date: 2016-01-07 14:27+0000\n"
-"Last-Translator: Antonio Trueba\n"
-"Language-Team: Spanish (http://www.transifex.com/oca/OCA-connector-telephony-8-0/language/es/)\n"
+"POT-Creation-Date: 2017-07-29 06:05+0000\n"
+"PO-Revision-Date: 2017-08-03 13:38+0000\n"
+"Last-Translator: OCA Transbot <transbot@odoo-community.org>\n"
+"Language-Team: Spanish (http://www.transifex.com/oca/OCA-connector-"
+"telephony-8-0/language/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: base_phone
@@ -30,12 +32,14 @@ msgid "Cancel"
 msgstr "Cancelar"
 
 #. module: base_phone
-#: code:addons/base_phone/base_phone.py:112
+#: code:addons/base_phone/base_phone.py:121
 #, python-format
 msgid ""
 "Cannot reformat the phone number '%s' to international format. Error "
 "message: %s"
-msgstr "No se puede reformatear el número de teléfono '%s' al formato internacional. Mensaje de error: %s"
+msgstr ""
+"No se puede reformatear el número de teléfono '%s' al formato internacional. "
+"Mensaje de error: %s"
 
 #. module: base_phone
 #. openerp-web
@@ -63,7 +67,7 @@ msgid "Companies"
 msgstr "Compañías"
 
 #. module: base_phone
-#: code:addons/base_phone/wizard/number_not_found.py:87
+#: code:addons/base_phone/wizard/number_not_found.py:91
 #, python-format
 msgid "Create New Partner"
 msgstr "Crear nueva empresa"
@@ -108,6 +112,13 @@ msgid "Dial"
 msgstr "Llamar"
 
 #. module: base_phone
+#: field:base.phone.installed,display_name:0
+#: field:number.not.found,display_name:0 field:phone.common,display_name:0
+#: field:reformat.all.phonenumbers,display_name:0
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: base_phone
 #: selection:reformat.all.phonenumbers,state:0
 msgid "Done"
 msgstr "Hecho"
@@ -133,7 +144,7 @@ msgid "Email Preferences"
 msgstr "Preferencias de correo electrónico"
 
 #. module: base_phone
-#: code:addons/base_phone/wizard/number_not_found.py:101
+#: code:addons/base_phone/wizard/number_not_found.py:105
 #, python-format
 msgid "Error:"
 msgstr "Error:"
@@ -157,14 +168,29 @@ msgstr "ID"
 #. module: base_phone
 #: help:res.company,number_of_digits_to_match_from_end:0
 msgid ""
-"In several situations, OpenERP will have to find a Partner/Lead/Employee/..."
-" from a phone number presented by the calling party. As the phone numbers "
+"In several situations, OpenERP will have to find a Partner/Lead/Employee/... "
+"from a phone number presented by the calling party. As the phone numbers "
 "presented by your phone operator may not always be displayed in a standard "
 "format, the best method to find the related Partner/Lead/Employee/... in "
-"OpenERP is to try to match the end of the phone number in OpenERP with the N"
-" last digits of the phone number presented by the calling party. N is the "
+"OpenERP is to try to match the end of the phone number in OpenERP with the N "
+"last digits of the phone number presented by the calling party. N is the "
 "value you should enter in this field."
-msgstr "En varias ocasiones, OpenERP tendrá que encontrar una empresa/oportunidad/empleado/... a partir del número de teléfono enviado por el interlocutor. Como los números de teléfono enviados por su operador de telefonía puede que a veces se muestren en un formato no estándar, el mejor método para encontrar la empresa/oportunidad/empleado/... relacionado en OpenERP es buscar que coincida el final del número de teléfono en OpenERP con los últimos N dígitos del número de teléfono enviado por el interlocutor. N es el número que debe introducir en este campo."
+msgstr ""
+"En varias ocasiones, OpenERP tendrá que encontrar una empresa/oportunidad/"
+"empleado/... a partir del número de teléfono enviado por el interlocutor. "
+"Como los números de teléfono enviados por su operador de telefonía puede que "
+"a veces se muestren en un formato no estándar, el mejor método para "
+"encontrar la empresa/oportunidad/empleado/... relacionado en OpenERP es "
+"buscar que coincida el final del número de teléfono en OpenERP con los "
+"últimos N dígitos del número de teléfono enviado por el interlocutor. N es "
+"el número que debe introducir en este campo."
+
+#. module: base_phone
+#: field:base.phone.installed,__last_update:0
+#: field:number.not.found,__last_update:0 field:phone.common,__last_update:0
+#: field:reformat.all.phonenumbers,__last_update:0
+msgid "Last Modified on"
+msgstr "Última modificación en"
 
 #. module: base_phone
 #: field:number.not.found,write_uid:0
@@ -231,7 +257,7 @@ msgid "Partner to Update"
 msgstr "Empresa a actualizar"
 
 #. module: base_phone
-#: code:addons/base_phone/wizard/number_not_found.py:107
+#: code:addons/base_phone/wizard/number_not_found.py:111
 #, python-format
 msgid "Partner: %s"
 msgstr "Empresa: %s"
@@ -251,7 +277,9 @@ msgstr "Identificación de llamada del teléfono"
 msgid ""
 "Phone number of calling party that has been obtained from the telephony "
 "server, in the format used by the telephony server (not E.164)."
-msgstr "Número de teléfono del interlocutor que ha sido obtenido desde el servidor de telefonía, en el formato usado por el servidor de telefonía (no E.164)"
+msgstr ""
+"Número de teléfono del interlocutor que ha sido obtenido desde el servidor "
+"de telefonía, en el formato usado por el servidor de telefonía (no E.164)"
 
 #. module: base_phone
 #: field:reformat.all.phonenumbers,phonenumbers_not_reformatted:0
@@ -276,7 +304,7 @@ msgid "Reformat all phone numbers"
 msgstr "Reformatear todos los números de teléfono"
 
 #. module: base_phone
-#: code:addons/base_phone/wizard/number_not_found.py:102
+#: code:addons/base_phone/wizard/number_not_found.py:106
 #, python-format
 msgid "Select the Partner to Update."
 msgstr "Escoja la empresa a actualizar"
@@ -301,16 +329,19 @@ msgstr "Preferencias de telefonía"
 #. module: base_phone
 #: sql_constraint:res.company:0
 msgid ""
-"The value of the field 'Number of Digits To Match From End' must be "
-"positive."
-msgstr "El valor del campo 'Número de dígitos que coinciden al final' debe ser positivo."
+"The value of the field 'Number of Digits To Match From End' must be positive."
+msgstr ""
+"El valor del campo 'Número de dígitos que coinciden al final' debe ser "
+"positivo."
 
 #. module: base_phone
 #: view:reformat.all.phonenumbers:base_phone.reformat_all_phonenumbers_form
 msgid ""
 "This wizard reformats the phone, mobile and fax numbers of all partners in "
 "standard international format e.g. +33141981242"
-msgstr "Este asistente reformatea los números de teléfono fijo, móvil y fax de todas las empresas en formato estandar internacional, p.ej. +33141981242"
+msgstr ""
+"Este asistente reformatea los números de teléfono fijo, móvil y fax de todas "
+"las empresas en formato estandar internacional, p.ej. +33141981242"
 
 #. module: base_phone
 #. openerp-web

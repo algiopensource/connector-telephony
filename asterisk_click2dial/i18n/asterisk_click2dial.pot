@@ -1,13 +1,11 @@
-# Translation of OpenERP Server.
+# Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* asterisk_click2dial
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenERP Server 7.0\n"
+"Project-Id-Version: Odoo Server 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-25 21:42+0000\n"
-"PO-Revision-Date: 2014-08-25 21:42+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -41,11 +39,6 @@ msgid "Amount of time (in seconds) Asterisk will try to reach the user's phone b
 msgstr ""
 
 #. module: asterisk_click2dial
-#: model:res.groups,name:asterisk_click2dial.group_asterisk_cid
-msgid "Asterisk CallerID"
-msgstr ""
-
-#. module: asterisk_click2dial
 #: field:res.users,asterisk_chan_type:0
 msgid "Asterisk Channel Type"
 msgstr ""
@@ -56,7 +49,7 @@ msgid "Asterisk IP address or DNS"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: view:asterisk.server:0
+#: view:asterisk.server:asterisk_click2dial.view_asterisk_server_form
 msgid "Asterisk Manager Interface"
 msgstr ""
 
@@ -71,12 +64,13 @@ msgid "Asterisk Server Name"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: view:asterisk.server:0
+#: view:asterisk.server:asterisk_click2dial.view_asterisk_server_search
 msgid "Asterisk Server Search"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: view:asterisk.server:0
+#: view:asterisk.server:asterisk_click2dial.view_asterisk_server_form
+#: view:asterisk.server:asterisk_click2dial.view_asterisk_server_tree
 #: model:ir.actions.act_window,name:asterisk_click2dial.action_asterisk_server
 #: model:ir.model,name:asterisk_click2dial.model_asterisk_server
 #: model:ir.ui.menu,name:asterisk_click2dial.act_menu_ast_server
@@ -99,13 +93,6 @@ msgid "Asterisk server on which the user's phone is connected. If you leave this
 msgstr ""
 
 #. module: asterisk_click2dial
-#. openerp-web
-#: code:addons/asterisk_click2dial/static/src/js/asterisk_click2dial.js:26
-#, python-format
-msgid "BIG PB"
-msgstr ""
-
-#. module: asterisk_click2dial
 #: field:res.users,cdraccount:0
 msgid "CDR Account"
 msgstr ""
@@ -116,7 +103,7 @@ msgid "Call Detail Record (CDR) account used for billing this user."
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:405
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:382
 #: field:res.users,callerid:0
 #, python-format
 msgid "Caller ID"
@@ -128,27 +115,17 @@ msgid "Caller ID used for the calls initiated by this user."
 msgstr ""
 
 #. module: asterisk_click2dial
-#: field:number.not.found,calling_number:0
-msgid "Calling Number"
-msgstr ""
-
-#. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:310
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:286
 #, python-format
 msgid "Can't get calling number from  Asterisk.\n"
 "Here is the error: '%s'"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:481
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:465
 #, python-format
 msgid "Click to dial with Asterisk failed.\n"
 "Here is the error: '%s'"
-msgstr ""
-
-#. module: asterisk_click2dial
-#: model:ir.model,name:asterisk_click2dial.model_res_company
-msgid "Companies"
 msgstr ""
 
 #. module: asterisk_click2dial
@@ -162,15 +139,25 @@ msgid "Company who uses the Asterisk server."
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:255
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:227
 #, python-format
 msgid "Connection Test Failed!"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:264
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:233
 #, python-format
 msgid "Connection Test Successfull!"
+msgstr ""
+
+#. module: asterisk_click2dial
+#: field:asterisk.server,create_uid:0
+msgid "Created by"
+msgstr ""
+
+#. module: asterisk_click2dial
+#: field:asterisk.server,create_date:0
+msgid "Created on"
 msgstr ""
 
 #. module: asterisk_click2dial
@@ -184,8 +171,13 @@ msgid "Dialplan Context"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: view:asterisk.server:0
+#: view:asterisk.server:asterisk_click2dial.view_asterisk_server_form
 msgid "Dialplan Parameters"
+msgstr ""
+
+#. module: asterisk_click2dial
+#: field:asterisk.server,display_name:0
+msgid "Display Name"
 msgstr ""
 
 #. module: asterisk_click2dial
@@ -195,20 +187,20 @@ msgid "Error message in raise"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:109
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:114
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:119
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:124
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:133
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:191
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:212
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:218
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:238
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:308
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:413
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:432
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:444
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:480
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:111
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:116
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:121
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:126
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:135
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:163
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:184
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:190
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:210
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:284
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:390
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:411
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:428
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:464
 #, python-format
 msgid "Error:"
 msgstr ""
@@ -220,9 +212,9 @@ msgstr ""
 
 #. module: asterisk_click2dial
 #. openerp-web
-#: code:addons/asterisk_click2dial/static/src/js/asterisk_click2dial.js:25
+#: code:addons/asterisk_click2dial/static/src/js/asterisk_click2dial.js:26
 #, python-format
-msgid "Fail"
+msgid "Failure"
 msgstr ""
 
 #. module: asterisk_click2dial
@@ -231,7 +223,7 @@ msgid "H323"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:256
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:228
 #, python-format
 msgid "Here is the error message: %s"
 msgstr ""
@@ -242,15 +234,35 @@ msgid "IAX2"
 msgstr ""
 
 #. module: asterisk_click2dial
+#: field:asterisk.server,id:0
+msgid "ID"
+msgstr ""
+
+#. module: asterisk_click2dial
 #: help:asterisk.server,ip_address:0
 msgid "IP address or DNS name of the Asterisk server."
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:404
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:381
 #: field:res.users,internal_number:0
 #, python-format
 msgid "Internal Number"
+msgstr ""
+
+#. module: asterisk_click2dial
+#: field:asterisk.server,__last_update:0
+msgid "Last Modified on"
+msgstr ""
+
+#. module: asterisk_click2dial
+#: field:asterisk.server,write_uid:0
+msgid "Last Updated by"
+msgstr ""
+
+#. module: asterisk_click2dial
+#: field:asterisk.server,write_date:0
+msgid "Last Updated on"
 msgstr ""
 
 #. module: asterisk_click2dial
@@ -269,7 +281,7 @@ msgid "MGCP"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:433
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:412
 #, python-format
 msgid "Missing phone number"
 msgstr ""
@@ -282,25 +294,25 @@ msgid "Moving to %s ID %d"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:192
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:164
 #, python-format
 msgid "No Asterisk server configured for the company '%s'."
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:445
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:429
 #, python-format
 msgid "No callerID configured for the current user"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:213
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:185
 #, python-format
 msgid "No channel type configured for the current user."
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:219
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:191
 #, python-format
 msgid "No resource name configured for the current user"
 msgstr ""
@@ -313,12 +325,13 @@ msgid "Number Not Found"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: model:ir.model,name:asterisk_click2dial.model_number_not_found
-msgid "Number not found"
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:234
+#, python-format
+msgid "Odoo can successfully login to the Asterisk Manager Interface."
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:111
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:113
 #, python-format
 msgid "Only use digits for the '%s' on the Asterisk server '%s'"
 msgstr ""
@@ -331,18 +344,7 @@ msgid "Open Caller"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: model:ir.model,name:asterisk_click2dial.model_wizard_open_calling_partner
-msgid "Open calling partner"
-msgstr ""
-
-#. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:265
-#, python-format
-msgid "OpenERP can successfully login to the Asterisk Manager Interface."
-msgstr ""
-
-#. module: asterisk_click2dial
-#: view:res.users:0
+#: view:res.users:asterisk_click2dial.view_users_form
 msgid "Optional Asterisk Parameters - for experts only, can be left empty"
 msgstr ""
 
@@ -352,28 +354,13 @@ msgid "Out Prefix"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: model:ir.model,name:asterisk_click2dial.model_res_partner
-msgid "Partner"
-msgstr ""
-
-#. module: asterisk_click2dial
-#: help:number.not.found,to_update_partner_id:0
-msgid "Partner on which the phone number will be written"
-msgstr ""
-
-#. module: asterisk_click2dial
-#: field:number.not.found,to_update_partner_id:0
-msgid "Partner to Update"
+#: selection:res.users,asterisk_chan_type:0
+msgid "PJSIP"
 msgstr ""
 
 #. module: asterisk_click2dial
 #: help:asterisk.server,password:0
 msgid "Password that OpenERP will use to communicate with the Asterisk Manager Interface. Refer to /etc/asterisk/manager.conf on your Asterisk server."
-msgstr ""
-
-#. module: asterisk_click2dial
-#: help:number.not.found,calling_number:0
-msgid "Phone number of calling party that has been obtained from Asterisk, in the format used by Asterisk (not E.164)."
 msgstr ""
 
 #. module: asterisk_click2dial
@@ -392,13 +379,20 @@ msgid "Priority of the extension in the Asterisk dialplan. Refer to /etc/asteris
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:239
+#. openerp-web
+#: code:addons/asterisk_click2dial/static/src/js/asterisk_click2dial.js:27
+#, python-format
+msgid "Problem in the connection to Asterisk"
+msgstr ""
+
+#. module: asterisk_click2dial
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:211
 #, python-format
 msgid "Problem in the request from OpenERP to Asterisk. Here is the error message: %s"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:403
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:380
 #: field:res.users,resource:0
 #, python-format
 msgid "Resource Name"
@@ -420,7 +414,7 @@ msgid "SIP"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: view:asterisk.server:0
+#: view:asterisk.server:asterisk_click2dial.view_asterisk_server_form
 msgid "Server Name"
 msgstr ""
 
@@ -445,7 +439,7 @@ msgid "Skinny"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: view:res.users:0
+#: view:res.users:asterisk_click2dial.view_users_form
 msgid "Standard Asterisk Parameters"
 msgstr ""
 
@@ -462,24 +456,24 @@ msgid "TCP port on which the Asterisk Manager Interface listens. Defined in /etc
 msgstr ""
 
 #. module: asterisk_click2dial
-#: view:asterisk.server:0
+#: view:asterisk.server:asterisk_click2dial.view_asterisk_server_form
 msgid "Test Connection to Asterisk"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:414
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:391
 #, python-format
 msgid "The '%s' for the user '%s' should only have ASCII caracters"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:136
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:138
 #, python-format
 msgid "The '%s' should only have ASCII caracters for the Asterisk server '%s'"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:120
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:122
 #, python-format
 msgid "The 'extension priority' must be a positive value for the Asterisk server '%s'"
 msgstr ""
@@ -525,13 +519,13 @@ msgid "Wait Time (sec)"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:115
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:117
 #, python-format
 msgid "You should set a 'Wait time' value between 1 and 120 seconds for the Asterisk server '%s'"
 msgstr ""
 
 #. module: asterisk_click2dial
-#: code:addons/asterisk_click2dial/asterisk_click2dial.py:125
+#: code:addons/asterisk_click2dial/asterisk_click2dial.py:127
 #, python-format
 msgid "You should set a TCP port between 1 and 65535 for the Asterisk server '%s'"
 msgstr ""
@@ -544,10 +538,5 @@ msgstr ""
 #. module: asterisk_click2dial
 #: selection:res.users,asterisk_chan_type:0
 msgid "mISDN"
-msgstr ""
-
-#. module: asterisk_click2dial
-#: model:ir.model,name:asterisk_click2dial.model_phone_common
-msgid "phone.common"
 msgstr ""
 
